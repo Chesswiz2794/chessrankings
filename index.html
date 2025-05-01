@@ -1,112 +1,254 @@
-<tbody>
-  <tr>
-    <td>1</td>
-    <td><span class="crown">👑</span> Gukesh Dommaraju</td>
-    <td data-country="India 🇮🇳">🇮🇳</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-19">19</div>
-      </div>
-    </td>
-    <td>Tata Steel – 3, Candidates – 5, GCT Romania – 1, Bonus (Olympiad + WCC) – 10</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Arjun Erigaisi</td>
-    <td data-country="India 🇮🇳">🇮🇳</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-19">19</div>
-      </div>
-    </td>
-    <td>Shenzhen – 1, TePe Sigeman – 3, WR Chess – 5, Chennai – 1, Bonus (Olympiad) – 5</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Nodirbek Abdusattorov</td>
-    <td data-country="Uzbekistan 🇺🇿">🇺🇿</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-14">14</div>
-      </div>
-    </td>
-    <td>Prague – 5, TePe Sigeman – 5, UzChess Cup – 3, Bonus (Olympiad) – 1</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Fabiano Caruana</td>
-    <td data-country="USA 🇺🇸">🇺🇸</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-11">11</div>
-      </div>
-    </td>
-    <td>GCT Romania – 5, Sinquefield Cup – 3, Bonus (Olympiad Silver) – 3</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>R Praggnanandhaa</td>
-    <td data-country="India 🇮🇳">🇮🇳</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-8">8</div>
-      </div>
-    </td>
-    <td>Norway Chess – 1, Biel – 1, WR Chess – 1, Bonus (Olympiad) – 5</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Alireza Firouzja</td>
-    <td data-country="France 🇫🇷">🇫🇷</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-8">8</div>
-      </div>
-    </td>
-    <td>GCT Romania – 3, Sinquefield Cup – 5</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Hikaru Nakamura</td>
-    <td data-country="USA 🇺🇸">🇺🇸</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-6">6</div>
-      </div>
-    </td>
-    <td>Candidates – 3, Norway Chess – 3</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>Nodirbek Yakubboev</td>
-    <td data-country="Uzbekistan 🇺🇿">🇺🇿</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-6">6</div>
-      </div>
-    </td>
-    <td>UzChess Cup – 5, Bonus (Olympiad) – 1</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>Wei Yi</td>
-    <td data-country="China 🇨🇳">🇨🇳</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-6">5</div>
-      </div>
-    </td>
-    <td>Tata Steel – 5</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Magnus Carlsen</td>
-    <td data-country="Norway 🇳🇴">🇳🇴</td>
-    <td>
-      <div class="progress-bar">
-        <div class="progress-bar-inner progress-bar-6">5</div>
-      </div>
-    </td>
-    <td>Norway Chess – 5</td>
-  </tr>
-</tbody>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chess Player Rankings 2024</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e9eef4;
+      padding: 40px;
+      color: #333;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #34495e;
+      color: white;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    .crown {
+      font-size: 1.2em;
+      color: goldenrod;
+      margin-right: 5px;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    td:nth-child(2) {
+      font-weight: 500;
+    }
+
+    td:nth-child(3) {
+      font-size: 1.5em;
+    }
+
+    .note {
+      margin-top: 30px;
+      font-size: 0.95em;
+      background: #fff;
+      padding: 20px;
+      border-left: 5px solid #34495e;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .note h2 {
+      margin-top: 0;
+      color: #34495e;
+    }
+
+    a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .dark-mode {
+      background-color: #333;
+      color: white;
+    }
+
+    .dark-mode table {
+      background-color: #444;
+      color: white;
+    }
+
+    .dark-mode th {
+      background-color: #555;
+    }
+
+    .dark-mode tr:nth-child(even) {
+      background-color: #666;
+    }
+
+    /* Graphical Progress Bars */
+    .progress-bar {
+      background-color: #ddd;
+      border-radius: 5px;
+      height: 20px;
+      width: 100%;
+    }
+
+    .progress-bar-inner {
+      height: 100%;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+    }
+
+    .progress-bar-19 { width: 95%; background-color: #4caf50; }
+    .progress-bar-15 { width: 75%; background-color: #2196f3; }
+    .progress-bar-14 { width: 70%; background-color: #ff9800; }
+    .progress-bar-11 { width: 55%; background-color: #ff5722; }
+    .progress-bar-8 { width: 40%; background-color: #9c27b0; }
+    .progress-bar-6 { width: 30%; background-color: #f44336; }
+
+    /* Country Hover Tooltips */
+    td:nth-child(3) {
+      position: relative;
+    }
+
+    td:nth-child(3):hover::after {
+      content: attr(data-country);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 10;
+      width: auto;
+      max-width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <h1>Top Chess Players – 2024 Major Tournaments Ranking</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Player</th>
+        <th>🌍</th>
+        <th>Total Points</th>
+        <th>Tournament Breakdown</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Players with shared rankings -->
+      <tr>
+        <td>1</td>
+        <td><span class="crown">👑</span> Gukesh Dommaraju</td>
+        <td data-country="India 🇮🇳">🇮🇳</td>
+        <td>19</td>
+        <td>Tata Steel – 3, Candidates – 5, GCT Romania – 1, Bonus (Olympiad + WCC) – 10</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Arjun Erigaisi</td>
+        <td data-country="India 🇮🇳">🇮🇳</td>
+        <td>15</td>
+        <td>Shenzhen – 1, TePe Sigeman – 3, WR Chess – 5, Chennai – 1, Bonus (Olympiad) – 5</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Nodirbek Abdusattorov</td>
+        <td data-country="Uzbekistan 🇺🇿">🇺🇿</td>
+        <td>14</td>
+        <td>Prague – 5, TePe Sigeman – 5, UzChess Cup – 3, Bonus (Olympiad) – 1</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Fabiano Caruana</td>
+        <td data-country="USA 🇺🇸">🇺🇸</td>
+        <td>11</td>
+        <td>GCT Romania – 5, Sinquefield Cup – 3, Bonus (Olympiad Silver) – 3</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>R Praggnanandhaa</td>
+        <td data-country="India 🇮🇳">🇮🇳</td>
+        <td>8</td>
+        <td>Norway Chess – 1, Biel – 1, WR Chess – 1, Bonus (Olympiad) – 5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Alireza Firouzja</td>
+        <td data-country="France 🇫🇷">🇫🇷</td>
+        <td>8</td>
+        <td>GCT Romania – 3, Sinquefield Cup – 5</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Hikaru Nakamura</td>
+        <td data-country="USA 🇺🇸">🇺🇸</td>
+        <td>6</td>
+        <td>Candidates – 3, Norway Chess – 3</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Nodirbek Yakubboev</td>
+        <td data-country="Uzbekistan 🇺🇿">🇺🇿</td>
+        <td>6</td>
+        <td>UzChess Cup – 5, Bonus (Olympiad) – 1</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Wei Yi</td>
+        <td data-country="China 🇨🇳">🇨🇳</td>
+        <td>5</td>
+        <td>Tata Steel – 5</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Magnus Carlsen</td>
+        <td data-country="Norway 🇳🇴">🇳🇴</td>
+        <td>5</td>
+        <td>Norway Chess – 5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <h2>Points System</h2>
+    <p>Points were allotted based on player performance across major classical tournaments in 2024. General rules used:</p>
+    <ul>
+      <li><strong>1st place</strong> – 5 points</li>
+      <li><strong>2nd place</strong> – 3 points</li>
+      <li><strong>3rd place</strong> – 1 point</li>
+      <li><strong>Bonus</strong> – Up to 10 points for outstanding performance in team events (e.g., Olympiad, World Championship)</li>
+    </ul>
+    <p>For complete tournament data and player standings, refer to the <a href="https://en.wikipedia.org/wiki/2024_in_chess#April" target="_blank">Wikipedia page on Chess in 2024</a>.</p>
+  </div>
+</body>
+</html>
